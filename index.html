@@ -9,60 +9,75 @@
 </head>
 
 <body class="page-body">
+  <header class="main-header header" data-test="header">
+    <h1 class="visually-hidden">Lifetour - Организация походов в горы</h1>
+    <div class="header__container">
+      <nav class="header__navigation">
+        <button class="header__wrapper-button wrapper-button--open button-open" type="button">
+          <span class="visually-hidden">
+            Открыть меню
+          </span>
+        </button>
+        <button class="header__wrapper-button button-close" type="button">
+          <span class="visually-hidden">
+            Закрыть меню
+          </span>
+        </button>
+        <ul class="header__wrapper">
+          <li class="header__wrapper-item">
+            <a class="header__wrapper-link button-text-b" href="#">
+              Туры
+            </a>
+          </li>
+          <li class="header__wrapper-item">
+            <a class="header__wrapper-link button-text-b" href="#">
+              Обучение
+            </a>
+          </li>
+          <li class="header__wrapper-item">
+            <a class="header__wrapper-link button-text-b" href="#">
+              О нас
+            </a>
+          </li>
+          <li class="header__wrapper-item">
+            <a class="header__wrapper-link button-text-b" href="#">
+              Отзывы
+            </a>
+          </li>
+          <li class="header__wrapper-item">
+            <a class="header__wrapper-link button-text-b" href="#">
+              Фотографии
+            </a>
+          </li>
+          <li class="header__wrapper-item">
+            <a class="header__wrapper-link button-text-b" href="#">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__block">
+        <a class="header__logo-link" href="#">
+          <img src="/__spritemap#sprite-logo_lifetour" width="142" height="42" alt="Логотип Lifetour">
+        </a>
+        <a class="header__link heading-h6" href="tel:+7(800)0000000">
+          8 800 000-00-00
+        </a>
+      </div>
+    </div>
+  </header>
   <main class="main-container">
-    <section class="main-container__header header" data-test="header">
-      <h1 class="visually-hidden">Lifetour - Организация походов в горы</h1>
-      <div class="header__container">
-        <nav class="header__navigation">
-          <button class="header__wrapper-button wrapper-button--open button-open" type="button">
-            <span class="visually-hidden">
-              Открыть меню
-            </span>
-          </button>
-          <button class="header__wrapper-button button-close" type="button">
-            <span class="visually-hidden">
-              Закрыть меню
-            </span>
-          </button>
-          <ul class="header__wrapper">
-            <li class="header__wrapper-item">
-              <a class="header__wrapper-link button-text-b" href="#">
-                Туры
-              </a>
-            </li>
-            <li class="header__wrapper-item">
-              <a class="header__wrapper-link button-text-b" href="#">
-                Обучение
-              </a>
-            </li>
-            <li class="header__wrapper-item">
-              <a class="header__wrapper-link button-text-b" href="#">
-                О нас
-              </a>
-            </li>
-            <li class="header__wrapper-item">
-              <a class="header__wrapper-link button-text-b" href="#">
-                Отзывы
-              </a>
-            </li>
-            <li class="header__wrapper-item">
-              <a class="header__wrapper-link button-text-b" href="#">
-                Фотографии
-              </a>
-            </li>
-            <li class="header__wrapper-item">
-              <a class="header__wrapper-link button-text-b" href="#">
-                Контакты
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__block">
-          <a href="#">
-            <img src="/__spritemap#sprite-logo_lifetour" width="142" height="42" alt="Логотип Lifetour">
-          </a>
-          <a class="header__link heading-h6" href="tel:+7(800)0000000">
-            8 800 000-00-00
+    <section class="main-container__hero hero" data-test="hero">
+      <div class="hero__container">
+        <div class="hero__slider">
+          <h2>
+            Захватывающие вершины Кавказа
+          </h2>
+          <p>
+            В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.
+          </p>
+          <a class="hero__link button-text-r" href="#">
+            Смотреть тур
           </a>
         </div>
       </div>
@@ -77,7 +92,6 @@
 <svg>
   <use href="/__spritemap#sprite-user"></use>
 </svg>
-<div data-test="header">header</div>
 <div data-test="hero">hero</div>
 <div data-test="tours">tours</div>
 <div data-test="training">training</div>

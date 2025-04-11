@@ -1,0 +1,43 @@
+.hero__container {
+  width: 290px;
+  margin: 0 auto;
+  padding: 40px 0 56px;
+
+
+  h2 {
+    font-weight: 800;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 30px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 56px;
+      line-height: 56px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 77px;
+      line-height: 77px;
+    }
+  }
+
+  p {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 20px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 17px;
+      line-height: 24px;
+    }
+  }
+}
+
+.hero__link {
+  padding: 19px;
+  background-color: $color-background-blue;
+  border: 1px solid transparent;
+  color: $color-text-white;
+  text-decoration: none;
+}
