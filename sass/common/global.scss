@@ -67,8 +67,8 @@
 .heading-h4 {
   font-weight: 700;
   font-style: normal;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 24px;
+  line-height: 28px;
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
@@ -159,13 +159,8 @@
 .captions-b {
   font-weight: 700;
   font-style: normal;
-  font-size: 12px;
-  line-height: 12px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 13px;
-    line-height: 13px;
-  }
+  font-size: 13px;
+  line-height: 13px;
 }
 
 .captions-m {

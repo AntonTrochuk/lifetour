@@ -25,7 +25,7 @@ function updateSlideFocus(slider) {
 }
 
 import Swiper from 'swiper';
-import { Pagination } from 'swiper/modules';
+import { Pagination, Navigation} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -87,3 +87,38 @@ const heroSlider = new Swiper(heroSwiper, {
 
 
 heroSlider.update();
+
+const toursSwiper = document.querySelector('.tours-swiper');
+const toursSlider = new Swiper(toursSwiper, {
+
+  modules: [Navigation],
+
+  loop: true,
+  speed: 500,
+  effect: 'fade',
+
+  breakpoints: {
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 18,
+    },
+
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+  },
+
+  navigation: {
+    nextEl: '.tours__button--next',
+    prevEl: '.tours__button--prev',
+    lockClass: 'disabled',
+  },
+});
+
+toursSlider.update();

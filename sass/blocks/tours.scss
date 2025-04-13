@@ -1,0 +1,235 @@
+.tours__container {
+  width: 290px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 678px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  picture {
+    display: flex;
+  }
+}
+
+.tours__title {
+  position: relative;
+  margin: 0;
+  padding: 39px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 0 35px;
+  }
+
+  &::before {
+    content: "Ближайшие туры";
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 26px;
+    color: $color-text-basic;
+    opacity: 3%;
+
+    @media (min-width: $tablet-width) {
+      font-size: 40px;
+      line-height: 40px;
+      top: 45px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 55px;
+      line-height: 55px;
+    }
+  }
+}
+
+.tours__button-block {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 4px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+  }
+}
+
+.tours__list {
+  margin: 0;
+  padding: 0;
+}
+
+.tours__description {
+  position: absolute;
+  top: 224px;
+  padding: 0 20px;
+  color: $color-text-white;
+  display: grid;
+  grid-template-columns: min-content;
+  grid-template-rows: auto;
+  align-items: center;
+}
+
+.tours__stats {
+  padding-left: 5px;
+  display: flex;
+  justify-content: space-between;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.tours__subtitle {
+  margin: 15px 0 31px;
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+}
+
+.tours__details,
+.tours__details-rating {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tours__details {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+}
+
+.tours__details-date,
+.tours__details-quantity {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.tours__details-level {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+
+.tours__details-rating {
+  display: flex;
+  gap: 1px;
+}
+
+.tours__text-info {
+  width: 90px;
+  height: 28px;
+  color: $color-text-white;
+  background-color: $color-background-blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 9px;
+    height: 12px;
+    background-image: url("/__spritemap#sprite-tours_pin-view");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.tours__stats-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tours__stats-text:nth-child(1) {
+  width: 67px;
+  height: 20px;
+  gap: 12px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("/__spritemap#sprite-tours_sun-view");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.tours__stats-text:nth-child(2) {
+  width: 74px;
+  height: 20px;
+  gap: 14px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url("/__spritemap#sprite-tours_moon-view");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.tours__button {
+  display: none;
+  width: 37px;
+  height: 35px;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.tours__button--prev {
+  background-image: url("/__spritemap#sprite-arrow_right-view");
+  background-repeat: no-repeat;
+  background-size: 14px 9px;
+  background-position: center;
+  background-color: $color-disabled;
+}
+
+.tours__button--next {
+  background-image: url("/__spritemap#sprite-arrow_right-view");
+  rotate: 180deg;
+  background-repeat: no-repeat;
+  background-size: 14px 9px;
+  background-position: center;
+  background-color: $color-background-blue;
+}
+
+.tours__link {
+  color: $color-button-additional;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  justify-content: center;
+  margin: 35px 0 30px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 12px;
+    background-image: url("/__spritemap#sprite-tours_small_arrow-view");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
