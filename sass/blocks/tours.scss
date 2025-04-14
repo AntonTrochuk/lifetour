@@ -62,29 +62,51 @@
   padding: 0;
 }
 
+.tours__item:nth-child(2),
+.tours__item:nth-child(3),
+.tours__item:nth-child(4) {
+  @media (min-width: $tablet-width) {
+    .tours__stats-text {
+      width: auto;
+    }
+
+    .tours__details {
+      gap: 27px;
+    }
+  }
+}
+
 .tours__description {
   position: absolute;
-  top: 224px;
+  bottom: 26px;
   padding: 0 20px;
   color: $color-text-white;
-  display: grid;
-  grid-template-columns: min-content;
-  grid-template-rows: auto;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 45px;
+  }
+}
+
+.tours__description-block {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 15px;
 }
 
 .tours__stats {
-  padding-left: 5px;
   display: flex;
-  justify-content: space-between;
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
+  gap: 17px;
 }
 
 .tours__subtitle {
-  margin: 15px 0 31px;
-  grid-column: 1 / 3;
-  grid-row: 2 / 3;
+  margin: 16px 0 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 235px;
+  }
 }
 
 .tours__details,
@@ -97,9 +119,10 @@
 .tours__details {
   display: flex;
   justify-content: space-between;
-  gap: 8px;
-  grid-column: 1 / 3;
-  grid-row: 3 / 4;
+
+  @media (min-width: $tablet-width) {
+    gap: 28px;
+  }
 }
 
 .tours__details-date,
@@ -122,16 +145,15 @@
 }
 
 .tours__text-info {
-  width: 90px;
+  width: fit-content;
+  padding: 0 12.69px 0 0;
   height: 28px;
   color: $color-text-white;
   background-color: $color-background-blue;
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 9px;
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
+  box-sizing: border-box;
 
   &::before {
     content: "";
@@ -141,17 +163,16 @@
     background-image: url("/__spritemap#sprite-tours_pin-view");
     background-size: contain;
     background-repeat: no-repeat;
+    margin: 0 0 0 16px;
   }
 }
 
 .tours__stats-text {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .tours__stats-text:nth-child(1) {
-  width: 67px;
   height: 20px;
   gap: 12px;
 
@@ -167,7 +188,6 @@
 }
 
 .tours__stats-text:nth-child(2) {
-  width: 74px;
   height: 20px;
   gap: 14px;
 
@@ -221,6 +241,10 @@
   gap: 13px;
   justify-content: center;
   margin: 35px 0 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 35px 0 50px;
+  }
 
   &::after {
     content: "";
