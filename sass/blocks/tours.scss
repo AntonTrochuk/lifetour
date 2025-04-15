@@ -1,3 +1,55 @@
+.tours {
+  position: relative;
+  overflow: hidden;
+
+
+  &::after {
+    content: "";
+    display: block;
+    width: 141px;
+    height: 595px;
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+    left: 179px;
+    background-image:
+      image-set(
+        url("../../img/background/background1_mobile@1x.webp") 1x,
+        url("../../img/background/background1_mobile@2x.webp") 2x,
+        url("../../img/background/background1_mobile@1x.jpg") 1x,
+        url("../../img/background/background1_mobile@2x.png") 2x
+      );
+
+    @media (min-width: $tablet-width) {
+      top: -92px;
+      left: 343px;
+      width: 425px;
+      height: 1630px;
+      background-image:
+        image-set(
+          url("../../img/background/background1_tablet@1x.webp") 1x,
+          url("../../img/background/background1_tablet@2x.webp") 2x,
+          url("../../img/background/background1_tablet@1x.jpg") 1x,
+          url("../../img/background/background1_tablet@2x.png") 2x
+        );
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -126px;
+      left: 838px;
+      width: 602px;
+      height: 1630px;
+      background-image:
+        image-set(
+          url("../../img/background/background1_desktop@1x.webp") 1x,
+          url("../../img/background/background1_desktop@2x.webp") 2x,
+          url("../../img/background/background1_desktop@1x.jpg") 1x,
+          url("../../img/background/background1_desktop@2x.png") 2x
+        );
+    }
+  }
+}
+
 .tours__container {
   width: 290px;
   margin: 0 auto;
@@ -6,6 +58,10 @@
     width: 678px;
     overflow: hidden;
     position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
   }
 
   picture {
@@ -20,6 +76,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 60px 0 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 119px 0 54px;
   }
 
   &::before {
@@ -43,6 +103,7 @@
     @media (min-width: $desktop-width) {
       font-size: 55px;
       line-height: 55px;
+      top: 100px;
     }
   }
 }
@@ -55,6 +116,10 @@
     top: 60px;
     right: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 120px;
+  }
 }
 
 .tours__list {
@@ -66,10 +131,6 @@
 .tours__item:nth-child(3),
 .tours__item:nth-child(4) {
   @media (min-width: $tablet-width) {
-    .tours__stats-text {
-      width: auto;
-    }
-
     .tours__details {
       gap: 27px;
     }
@@ -85,6 +146,10 @@
 
   @media (min-width: $tablet-width) {
     column-gap: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 340px;
   }
 }
 
@@ -103,6 +168,18 @@
 
 .tours__subtitle {
   margin: 16px 0 30px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 1px;
+    background-color: $color-white;
+    opacity: 20%;
+    position: absolute;
+    bottom: -15px;
+  }
 
   @media (min-width: $tablet-width) {
     width: 235px;
@@ -146,7 +223,7 @@
 
 .tours__text-info {
   width: fit-content;
-  padding: 0 12.69px 0 0;
+  padding: 0 12px 0 0;
   height: 28px;
   color: $color-text-white;
   background-color: $color-background-blue;
@@ -244,6 +321,10 @@
 
   @media (min-width: $tablet-width) {
     margin: 35px 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 63px 0 110px;
   }
 
   &::after {
