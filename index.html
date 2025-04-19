@@ -25,22 +25,22 @@
         </button>
         <ul class="header__wrapper">
           <li class="header__wrapper-item">
-            <a class="header__wrapper-link button-text-b" href="#">
+            <a class="header__wrapper-link button-text-b" href="#tours">
               Туры
             </a>
           </li>
           <li class="header__wrapper-item">
-            <a class="header__wrapper-link button-text-b" href="#">
+            <a class="header__wrapper-link button-text-b" href="#training">
               Обучение
             </a>
           </li>
           <li class="header__wrapper-item">
-            <a class="header__wrapper-link button-text-b" href="#">
+            <a class="header__wrapper-link button-text-b" href="#about">
               О нас
             </a>
           </li>
           <li class="header__wrapper-item">
-            <a class="header__wrapper-link button-text-b" href="#">
+            <a class="header__wrapper-link button-text-b" href="#reviews">
               Отзывы
             </a>
           </li>
@@ -67,7 +67,7 @@
     </div>
   </header>
   <main class="main-container">
-    <section class="main-container__hero hero" data-test="hero">
+    <section class="main-container__hero hero" data-test="hero" id="hero">
       <div class="hero__container swiper">
         <ul class="hero__list swiper-wrapper">
           <li class="hero__item swiper-slide">
@@ -174,7 +174,7 @@
         </div>
       </div>
     </section>
-    <section class="main-container__tours tours" data-test="tours">
+    <section class="main-container__tours tours" data-test="tours" id="tours">
       <div class="tours__container tours-swiper">
         <h2 class="tours__title heading-h3">
           Ближайшие туры
@@ -473,7 +473,7 @@
         </a>
       </div>
     </section>
-    <section class="main-container__training training" data-test="training">
+    <section class="main-container__training training" data-test="training" id="training">
       <div class="training__container training-swiper">
         <h3 class="training__title heading-h3">
           Обучение
@@ -615,7 +615,7 @@
       </div>
       </div>
     </section>
-    <section class="main-container__about about" data-test="about">
+    <section class="main-container__about about" data-test="about" id="about">
       <div class="about__container">
         <div>
           <h3>
@@ -642,6 +642,149 @@
         </div>
       </div>
     </section>
+    <section class="main-container__reviews reviews" data-test="reviews" id="reviews">
+      <div class="reviews__container reviews-swiper">
+        <div class="reviews__header">
+          <h3 class="reviews__header-subtitle heading-h3">
+            Отзывы
+          </h3>
+          <div class="reviews__header-button-block">
+            <button class="reviews__header-button reviews__header-button--prev button button-prev" type="button">
+              <span class="visually-hidden">
+                Назад
+              </span>
+            </button>
+            <button class="reviews__header-button reviews__header-button--next button button-next" type="button">
+              <span class="visually-hidden">
+                Следующая
+              </span>
+            </button>
+          </div>
+        </div>
+        <ul class="reviews__list swiper-wrapper">
+          <li class="reviews__item swiper-slide">
+            <div class="reviews__item-block">
+              <picture>
+                <source media="(min-width:1440px)" width="258" height="253" type="image/webp" srcset="./img/reviews/reviews1_desktop@1x.webp 1x, ./img/reviews/reviews1_desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" width="186" height="237" type="image/webp" srcset="./img/reviews/reviews1_tablet@1x.webp 1x, ./img/reviews/reviews1_tablet@2x.webp 2x">
+                <source width="250" height="169" type="image/webp" srcset="./img/reviews/reviews1_mobile@1x.webp 1x, ./img/reviews/reviews1_mobile@2x.webp 2x">
+                <source media="(min-width:1440px)" width="258" height="253" type="image/jpg" srcset="./img/reviews/reviews1_desktop@1x.jpg.jpg 1x, ./img/reviews/reviews1_desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" width="186" height="237" type="image/jpg" srcset="./img/reviews/reviews1_tablet@1x.jpg.jpg 1x, ./img/reviews/reviews1_tablet@2x.jpg 2x">
+                <img src="./img/reviews/reviews1_mobile@1x.jpg" srcset="./img/reviews/reviews1_mobile@2x.jpg 2x" width="250" height="169" alt="Фото комментатора">
+              </picture>
+              <div class="reviews__comments-block">
+                <blockquote>
+                  <p>
+                    Осенью ходили в поход на Алтай <br>с друзьями. Впечатления потрясающие! Инструкторы, настоящие эксперты, всему научили, <br>все показали. Делились историями <br>о местах, людях, культуре места.
+                  </p>
+                  <p>
+                    С уверенностью могу сказать, <br>что жизнь разделилась на до этого <br>и после. Ещё никогда не отдыхал <br>так душой и телом. Всем очень рекомендую!
+                  </p>
+                </blockquote>
+                <p class="reviews__author">
+                  <span class="reviews__author-name captions-r">
+                    Фролов Александр
+                  </span>
+                  <span class="reviews__author-data captions-s">
+                    38 лет, Москва
+                  </span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="reviews__item swiper-slide">
+            <div class="reviews__item-block">
+              <picture>
+                <source media="(min-width:1440px)" width="258" height="253" type="image/webp" srcset="./img/reviews/reviews2_desktop@1x.webp 1x, ./img/reviews/reviews2_desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" width="186" height="237" type="image/webp" srcset="./img/reviews/reviews2_tablet@1x.webp 1x, ./img/reviews/reviews2_tablet@2x.webp 2x">
+                <source width="250" height="169" type="image/webp" srcset="./img/reviews/reviews2_mobile@1x.webp 1x, ./img/reviews/reviews2_mobile@2x.webp 2x">
+                <source media="(min-width:1440px)" width="258" height="253" type="image/jpg" srcset="./img/reviews/reviews2_desktop@1x.jpg.jpg 1x, ./img/reviews/reviews2_desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" width="186" height="237" type="image/jpg" srcset="./img/reviews/reviews2_tablet@1x.jpg.jpg 1x, ./img/reviews/reviews2_tablet@2x.jpg 2x">
+                <img src="./img/reviews/reviews2_mobile@1x.jpg" srcset="./img/reviews/reviews2_mobile@2x.jpg 2x" width="250" height="169" alt="Фото комментатора">
+              </picture>
+              <div class="reviews__comments-block">
+                <blockquote>
+                  <p>
+                    Хороший полноценный поход <br>с разнообразными локациями. В начале дорога идёт по лыжне, далее прошли мимо полигона, по болотам, у озёр и лесных ручьёв, остатков дач конца 19 века. Было очень интересно!
+                  </p>
+                  <p>
+                    Инструктор Федор дружелюбный, внимательный к технике безопасности и своим туристам. Всем советую этот тур.
+                  </p>
+                </blockquote>
+                <p class="reviews__author">
+                  <span class="reviews__author-name captions-r">
+                    Иван Соловьёв
+                  </span>
+                  <span class="reviews__author-data captions-s">
+                    25 лет, Владивосток
+                  </span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="reviews__item swiper-slide">
+            <div class="reviews__item-block">
+              <picture>
+                <source media="(min-width:1440px)" width="258" height="253" type="image/webp" srcset="./img/reviews/reviews3_desktop@1x.webp 1x, ./img/reviews/reviews3_desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" width="186" height="237" type="image/webp" srcset="./img/reviews/reviews3_tablet@1x.webp 1x, ./img/reviews/reviews3_tablet@2x.webp 2x">
+                <source width="250" height="169" type="image/webp" srcset="./img/reviews/reviews3_mobile@1x.webp 1x, ./img/reviews/reviews3_mobile@2x.webp 2x">
+                <source media="(min-width:1440px)" width="258" height="253" type="image/jpg" srcset="./img/reviews/reviews3_desktop@1x.jpg.jpg 1x, ./img/reviews/reviews3_desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" width="186" height="237" type="image/jpg" srcset="./img/reviews/reviews3_tablet@1x.jpg.jpg 1x, ./img/reviews/reviews3_tablet@2x.jpg 2x">
+                <img src="./img/reviews/reviews3_mobile@1x.jpg" srcset="./img/reviews/reviews3_mobile@2x.jpg 2x" width="250" height="169" alt="Фото комментатора">
+              </picture>
+              <div class="reviews__comments-block">
+                <blockquote>
+                  <p>
+                    Ранее не ходила на такие длинные дистанции. В первый день прошли около 30 км, физически я устала на 18 км, поэтому не была уверена, пройду ли до конца. Но я справилась. Второй день прошёл легче, чем ожидала, видимо организм уже привык.
+                  </p>
+                  <p>
+                    Спасибо ребятам, инструкторам за помощь и поддержку! Я была рада быть в такой компании.
+                  </p>
+                </blockquote>
+                <p class="reviews__author">
+                  <span class="reviews__author-name captions-r">
+                    Евгения Баженова
+                  </span>
+                  <span class="reviews__author-data captions-s">
+                    23 года, Кострома
+                  </span>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="reviews__item swiper-slide">
+            <div class="reviews__item-block">
+              <picture>
+                <source media="(min-width:1440px)" width="258" height="253" type="image/webp" srcset="./img/reviews/reviews4_desktop@1x.webp 1x, ./img/reviews/reviews4_desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" width="186" height="237" type="image/webp" srcset="./img/reviews/reviews4_tablet@1x.webp 1x, ./img/reviews/reviews4_tablet@2x.webp 2x">
+                <source width="250" height="169" type="image/webp" srcset="./img/reviews/reviews4_mobile@1x.webp 1x, ./img/reviews/reviews4_mobile@2x.webp 2x">
+                <source media="(min-width:1440px)" width="258" height="253" type="image/jpg" srcset="./img/reviews/reviews4_desktop@1x.jpg.jpg 1x, ./img/reviews/reviews4_desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" width="186" height="237" type="image/jpg" srcset="./img/reviews/reviews4_tablet@1x.jpg.jpg 1x, ./img/reviews/reviews4_tablet@2x.jpg 2x">
+                <img src="./img/reviews/reviews4_mobile@1x.jpg" srcset="./img/reviews/reviews4_mobile@2x.jpg 2x" width="250" height="169" alt="Фото комментатора">
+              </picture>
+              <div class="reviews__comments-block">
+                <blockquote>
+                  <p>
+                    Это был опыт, изменивший мою жизнь! Думала, не справлюсь, но все получилось! Дух захватывает, когда наконец‑то, преодолев все трудности и препятствия, взбираешься на вершину.
+                  </p>
+                  <p>
+                    У нас собралась потрясающая команда. Все друг друга поддерживали, по вечерам мы сидели вместе у костра и пели песни. Обязательно повторю такое приключение!
+                  </p>
+                </blockquote>
+                <p class="reviews__author">
+                  <span class="reviews__author-name captions-r">
+                    Елена Пирогова
+                  </span>
+                  <span class="reviews__author-data captions-s">
+                    37 лет, Тюмень
+                  </span>
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
   <script type="module" src="js/main.js"></script>
 </body>
@@ -652,7 +795,6 @@
 <svg>
   <use href="/__spritemap#sprite-user"></use>
 </svg>
-<div data-test="reviews">reviews</div>
 <div data-test="adv">adv</div>
 <div data-test="gallery">gallery</div>
 <div data-test="form">form</div>
