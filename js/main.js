@@ -122,3 +122,38 @@ const toursSlider = new Swiper(toursSwiper, {
 });
 
 toursSlider.update();
+
+const trainingSwiper = document.querySelector('.training-swiper');
+const trainingSlider = new Swiper(trainingSwiper, {
+
+  modules: [Navigation],
+
+  loop: true,
+  speed: 500,
+  effect: 'fade',
+
+  breakpoints: {
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+  },
+
+  navigation: {
+    nextEl: '.training__header-button--next',
+    prevEl: '.training__header-button--prev',
+    lockClass: 'disabled',
+  },
+});
+
+trainingSlider.update();
