@@ -1,3 +1,420 @@
-.training {
-  z-index: -2;
+
+.training__container {
+  width: 290px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 678px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+
+  p {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 820px;
+    }
+  }
+
+  p br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+}
+
+.training__title {
+  position: relative;
+  margin: 0;
+  padding: 36px 0 35px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 0 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 64px 0 31px;
+  }
+
+  &::before {
+    content: "Обучение";
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 26px;
+    color: $color-text-basic;
+    opacity: 3%;
+
+    @media (min-width: $tablet-width) {
+      font-size: 40px;
+      line-height: 40px;
+      top: 45px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 55px;
+      line-height: 55px;
+      top: 47px;
+    }
+  }
+}
+
+.training__header {
+  margin: 28px 0 22px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 26px 0 30px;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 58px 0 20px;
+  }
+}
+
+.training__header-button-block {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 4px;
+  }
+}
+
+.training__header-subtitle {
+  margin: 0;
+}
+
+.training__list {
+  margin: 0 0 25px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 57px;
+  }
+}
+
+.trainers__item {
+  padding: 15px;
+  border: 1px solid $color-training-border;
+  box-sizing: border-box;
+  background-color: $color-background-white;
+
+  @media (min-width: $tablet-width) {
+    min-height: 388px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 356px;
+  }
+
+  span {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  span::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid $color-training-border-vk;
+    box-sizing: border-box;
+    background-image: url("/__spritemap#sprite-vk-view");
+    background-size: 14px 8px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  p {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    width: 240px;
+
+    @media (min-width: $tablet-width) {
+      width: 182.67px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 255px;
+    }
+  }
+
+  p br {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  picture {
+    display: block;
+    width: 260px;
+
+    @media (min-width: $tablet-width) {
+      width: 182.67px;
+    }
+  }
+
+  img {
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.trainers__social-link {
+  text-decoration: none;
+  color: $color-text-basic;
+  display: block;
+  margin: 15px 0 13px;
+
+  @media (min-width: $desktop-width) {
+    margin: 15px 0 14px;
+  }
+}
+
+.trainers__item:nth-child(1) {
+  order: 2;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}
+
+.trainers__item:nth-child(2) {
+  order: 3;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.trainers__item:nth-child(3) {
+  order: 1;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+}
+
+.trainers__item:nth-child(4) {
+  order: 4;
+}
+
+.trainers__item:nth-child(5) {
+  order: 5;
+}
+
+.training__instruction-title {
+  margin: 0 0 25px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 102px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 29px;
+  }
+}
+
+.training__instruction-list {
+  margin: 0;
+  list-style: none;
+  padding: 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 104px;
+    column-gap: 171px;
+    margin: 0;
+    padding: 0 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    row-gap: 0;
+    column-gap: 8px;
+    padding: 0 0 62px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 183px;
+    background-color: $color-background-blue;
+    position: absolute;
+    top: 12px;
+    left: 6px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      height: 2px;
+      width: 100%;
+      top: 78px;
+      transform: translateX(16px);
+    }
+  }
+}
+
+.training__instruction-item {
+  display: flex;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: $color-background-blue;
+    border-radius: 50%;
+    align-self: center;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      position: absolute;
+      top: 73px;
+      left: 21px;
+    }
+  }
+
+  &:nth-child(3)::before {
+    @media (min-width: $desktop-width) {
+      left: 0;
+    }
+  }
+
+  span {
+    width: 200px;
+    order: 3;
+  }
+
+  br {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+}
+
+.training__instruction-item--map,
+.training__instruction-item--equipment,
+.training__instruction-item--lectures,
+.training__instruction-item--obstacles {
+  &::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    align-self: start;
+    order: 2;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 9px 0 15px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 10px 0 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 10px;
+    }
+  }
+}
+
+.training__instruction-item--map {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+
+  &::after {
+    background-image: url("../../img/sprite/training_instruction_map.svg");
+  }
+}
+
+.training__instruction-item--equipment {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+  }
+
+  &::after {
+    background-image: url("../../img/sprite/training_instruction_boots.svg");
+  }
+}
+
+.training__instruction-item--lectures {
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 3;
+  }
+
+  &::after {
+    background-image: url("../../img/sprite/training_instruction_tree.svg");
+  }
+}
+
+.training__instruction-item--obstacles {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 4;
+  }
+
+  &::after {
+    background-image: url("../../img/sprite/training_instruction_mountain.svg");
+  }
 }

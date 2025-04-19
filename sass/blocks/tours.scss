@@ -229,36 +229,6 @@
   }
 }
 
-.tours__button {
-  display: none;
-  width: 37px;
-  height: 35px;
-  border: 1px solid transparent;
-  box-sizing: border-box;
-  cursor: pointer;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-}
-
-.tours__button--prev {
-  background-image: url("/__spritemap#sprite-arrow_right-view");
-  background-repeat: no-repeat;
-  background-size: 14px 9px;
-  background-position: center;
-  background-color: $color-disabled;
-}
-
-.tours__button--next {
-  background-image: url("/__spritemap#sprite-arrow_right-view");
-  rotate: 180deg;
-  background-repeat: no-repeat;
-  background-size: 14px 9px;
-  background-position: center;
-  background-color: $color-background-blue;
-}
-
 .tours__link {
   color: $color-button-additional;
   text-decoration: none;
