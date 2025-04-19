@@ -258,3 +258,19 @@
     background-position: center;
   }
 }
+
+.tours__button--next {
+  &:disabled {
+    border-color: $color-disabled;
+    background-color: $color-disabled;
+    background-image: url("/__spritemap#sprite-arrow_right-view");
+  }
+}
+
+.tours__button--prev {
+  &:disabled {
+    border-color: $color-disabled;
+    background-color: $color-disabled;
+    background-image: url("/__spritemap#sprite-arrow_right-view");
+  }
+}

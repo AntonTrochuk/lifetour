@@ -1,0 +1,239 @@
+.about__container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding: 40px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 0;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 434px;
+    height: 400px;
+    background-image:
+      image-set(
+        url("../../img/about/about_mobile@1x.webp") 1x,
+        url("../../img/about/about_mobile@2x.webp") 2x,
+        url("../../img/about/about_mobile@1x.jpg") 1x,
+        url("../../img/about/about_mobile@2x.jpg") 2x
+      );
+
+    @media (min-width: $tablet-width) {
+      width: 450px;
+      height: 350px;
+      margin: 134px 0 0;
+      background-image:
+        image-set(
+          url("../../img/about/about_tablet@1x.webp") 1x,
+          url("../../img/about/about_tablet@2x.webp") 2x,
+          url("../../img/about/about_tablet@1x.jpg") 1x,
+          url("../../img/about/about_tablet@2x.jpg") 2x
+        );
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 660px;
+      height: 498px;
+      margin: 0;
+      background-image:
+        image-set(
+          url("../../img/about/about_desktop@1x.webp") 1x,
+          url("../../img/about/about_desktop@2x.webp") 2x,
+          url("../../img/about/about_desktop@1x.jpg") 1x,
+          url("../../img/about/about_desktop@2x.jpg") 2x
+        );
+    }
+  }
+
+  > div {
+    width: 290px;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      width: 270px;
+      margin: 0 auto 0 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 660px;
+    }
+  }
+
+  h3 {
+    position: relative;
+    padding: 16px 0 42px;
+    margin: 0;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 22px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 25px;
+      line-height: 25px;
+      padding: 20px 0 46px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 35px;
+      line-height: 35px;
+      padding: 45px 0 58px;
+    }
+  }
+
+  h3::before {
+    content: "О нас";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 26px;
+    color: $color-text-basic;
+    opacity: 3%;
+
+    @media (min-width: $tablet-width) {
+      font-size: 40px;
+      line-height: 40px;
+      top: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 55px;
+      line-height: 55px;
+      top: 0;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    @media (min-width: $desktop-width) {
+      gap: 27px;
+    }
+  }
+
+  h5 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0 0 15px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 21px;
+      line-height: 21px;
+      margin: 0 0 18px;
+    }
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}
+
+.about__container li:nth-child(1) p {
+  @media (min-width: $desktop-width) {
+    width: 555px;
+  }
+}
+
+.about__container li:nth-child(2) p {
+  @media (min-width: $desktop-width) {
+    width: 585px;
+  }
+}
+
+.about__container li:nth-child(1) br:nth-child(1),
+.about__container li:nth-child(1) br:nth-child(2),
+.about__container li:nth-child(1) br:nth-child(3) {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.about__container li:nth-child(1) br:nth-child(3) {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+
+.about__container li:nth-child(2) br:nth-child(1),
+.about__container li:nth-child(2) br:nth-child(2),
+.about__container li:nth-child(2) br:nth-child(3),
+.about__container li:nth-child(2) br:nth-child(6),
+.about__container li:nth-child(2) br:nth-child(7) {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.about__container li:nth-child(2) br:nth-child(4) {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.about__container li:nth-child(2) br:nth-child(5) {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.about__container li:nth-child(2) br:nth-child(1),
+.about__container li:nth-child(2) br:nth-child(2) {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}

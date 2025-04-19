@@ -60,9 +60,30 @@
   border: 1px solid transparent;
   box-sizing: border-box;
   cursor: pointer;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     display: block;
+  }
+
+  &:hover {
+    border-color: $color-dark-blue;
+    background-color: $color-background-white;
+  }
+
+  &:focus-visible {
+    border-color: transparent;
+    background-color: $color-background-white;
+  }
+
+  &:active {
+    border-color: $color-dark-blue;
+    background-color: $color-dark-blue;
+  }
+
+  &:disabled {
+    border-color: $color-disabled;
+    background-color: $color-disabled;
   }
 }
 
@@ -71,7 +92,17 @@
   background-repeat: no-repeat;
   background-size: 14px 9px;
   background-position: center;
-  background-color: $color-disabled;
+  background-color: $color-background-blue;
+
+  &:hover,
+  &:focus-visible {
+    background-image: url("/__spritemap#sprite-arrow_right_dark-view");
+  }
+
+  &:active,
+  &:disabled {
+    background-image: url("/__spritemap#sprite-arrow_right-view");
+  }
 }
 
 .button-next {
@@ -81,6 +112,16 @@
   background-size: 14px 9px;
   background-position: center;
   background-color: $color-background-blue;
+
+  &:hover,
+  &:focus-visible {
+    background-image: url("/__spritemap#sprite-arrow_right_dark-view");
+  }
+
+  &:active,
+  &:disabled {
+    background-image: url("/__spritemap#sprite-arrow_right-view");
+  }
 }
 
 .visually-hidden {
