@@ -1,0 +1,381 @@
+
+.adv__container {
+  width: 290px;
+  margin: 0 auto;
+  padding: 0 0 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 678px;
+    padding: 0 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    width: 100%;
+    overflow: visible;
+    position: relative;
+    padding: 0 0 100px;
+  }
+}
+
+.adv__title {
+  position: relative;
+  text-align: center;
+  margin: 0;
+  padding: 37px 0 36px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 135px 0 50px;
+  }
+
+  &::before {
+    content: "Преимущества";
+    display: inline-block;
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 800;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 26px;
+    color: $color-text-basic;
+    opacity: 3%;
+
+    @media (min-width: $tablet-width) {
+      font-size: 40px;
+      line-height: 40px;
+      top: 45px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 55px;
+      line-height: 55px;
+      top: 105px;
+    }
+  }
+}
+
+.adv__list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    gap: 0;
+    justify-content: unset;
+    margin: 0 -410px 50px;
+  }
+}
+
+.adv__item {
+  padding: 19px 9px;
+  border: 1px solid $color-adv-border;
+
+  @media (min-width: $tablet-width) {
+    padding: 29px 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 39px 19px;
+    box-sizing: border-box;
+  }
+
+  h6 {
+    margin: 20px 0 15px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+
+    @media (min-width: $tablet-width) {
+      margin: 26px 0 14px;
+      font-size: 16px;
+      line-height: 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 30px 0 15px;
+      font-size: 18px;
+      line-height: 18px;
+    }
+  }
+
+  p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    @media (min-width: $tablet-width) {
+      width: 284px;
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 340px;
+    }
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+      min-height: 280px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 249px;
+      width: 340px;
+    }
+  }
+
+  div::before {
+    content: "";
+    display: block;
+    width: 42px;
+    height: 42px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 48px;
+      height: 48px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 54px;
+      height: 54px;
+    }
+  }
+}
+
+.slide-safety div {
+  &::before {
+    background-image: url("/__spritemap#sprite-adv_safety-view");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("/__spritemap#sprite-adv_safety_tab-view");
+    }
+  }
+
+  br:nth-child(1) {
+    display: block;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  br:nth-child(2),
+  br:nth-child(3),
+  br:nth-child(4) {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+}
+
+.slide-expertise div {
+  &::before {
+    background-image: url("/__spritemap#sprite-adv_expertise-view");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("/__spritemap#sprite-adv_expertise_tab-view");
+    }
+  }
+
+  br:nth-child(1) {
+    display: block;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  br:nth-child(2) {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  br:nth-child(3) {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  br:nth-child(4) {
+    display: block;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  br:nth-child(5) {
+    display: block;
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+}
+
+.slide-equipment div {
+  &::before {
+    background-image: url("/__spritemap#sprite-adv_equipment-view");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("/__spritemap#sprite-adv_equipment_tab-view");
+    }
+  }
+
+  br:nth-child(2) {
+    display: block;
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  br:nth-child(3) {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  br:nth-child(4) {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  br:nth-child(5) {
+    display: block;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  br:nth-child(6) {
+    display: block;
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+}
+
+.slide-routes div {
+  &::before {
+    background-image: url("/__spritemap#sprite-adv_routes-view");
+  }
+
+  br:nth-child(1) {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  br:nth-child(2) {
+    display: block;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  br:nth-child(3) {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+}
+
+.slide-nature div {
+  &::before {
+    background-image: url("/__spritemap#sprite-adv_nature-view");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("/__spritemap#sprite-adv_nature_tab-view");
+    }
+  }
+
+  br {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  h6 {
+    margin: 20px 4px 15px 0;
+
+    @media (min-width: $tablet-width) {
+      margin: 26px 4px 14px 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 30px 0 15px;
+    }
+  }
+
+  span {
+    margin: 0 0 0 4px;
+  }
+}
+
+.adv__button-block {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+  }
+}
