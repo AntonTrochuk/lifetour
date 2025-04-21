@@ -45,7 +45,7 @@
             </a>
           </li>
           <li class="header__wrapper-item">
-            <a class="header__wrapper-link button-text-b" href="#">
+            <a class="header__wrapper-link button-text-b" href="#gallery">
               Фотографии
             </a>
           </li>
@@ -834,7 +834,7 @@
           <li class="adv__item swiper-slide slide-nature">
             <div>
               <h6>
-                Бережное отношение <br>к природе
+                Бережное отношение <br><span>к природе</span>
               </h6>
               <p>
                 Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».
@@ -855,6 +855,102 @@
             </span>
           </button>
         </div>
+      </div>
+    </section>
+    <section class="main-container__gallery gallery" data-test="gallery" id="gallery">
+      <div class="gallery__container">
+        <div class="gallery__text-block">
+          <h3 class="gallery__header-subtitle heading-h3">
+            Фотогалерея
+          </h3>
+          <p>
+            Добавляйте фото с хэштегом #лайфтур, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.
+          </p>
+        </div>
+        <div class="gallery__header-button-block">
+          <button class="gallery__header-button gallery__header-button--prev button button-prev" type="button">
+            <span class="visually-hidden">
+              Назад
+            </span>
+          </button>
+          <button class="gallery__header-button gallery__header-button--next button button-next" type="button">
+            <span class="visually-hidden">
+              Следующая
+            </span>
+          </button>
+        </div>
+        <ul class="gallery__list swiper-wrapper">
+          <li class="gallery__item swiper-slide">
+            <picture>
+              <source media="(min-width:1440px)" width="284" height="463" type="image/webp" srcset="img/gallery/photo-1-desk.webp 1x, img/gallery/photo-1-desk@2x.webp 2x">
+              <source media="(min-width: 768px)" width="253" height="418" type="image/webp" srcset="img/gallery/photo-1-tab.webp 1x, img/gallery/photo-1-tab@2x.webp 2x">
+              <source width="158" height="266" type="image/webp" srcset="img/gallery/photo-1-mob.webp 1x, img/gallery/photo-1-mob@2x.webp 2x">
+              <source media="(min-width:1440px)" width="284" height="463" type="image/jpg" srcset="img/gallery/photo-1-desk.jpg 1x, img/gallery/photo-1-desk@2x.jpg 2x">
+              <source media="(min-width: 768px)" width="253" height="418" type="image/jpg" srcset="img/gallery/photo-1-tab.jpg 1x, img/gallery/photo-1-tab@2x.jpg 2x">
+              <img src="img/gallery/photo-1-mob.jpg" srcset="img/gallery/photo-1-mob@2x.jpg 2x" width="158" height="266" alt="На фоне гор.">
+            </picture>
+          </li>
+          <li class="gallery__item swiper-slide">
+            <div class="gallery__item-conteiner">
+              <picture>
+                <source media="(min-width:1440px)" width="255" height="200" type="image/webp" srcset="img/gallery/photo-2-desk.webp 1x, img/gallery/photo-2-desk@2x.webp 2x">
+                <source media="(min-width: 768px)" width="252" height="205.5" type="image/webp" srcset="img/gallery/photo-2-tab.webp 1x, img/gallery/photo-2-tab@2x.webp 2x">
+                <source width="127" height="129.5" type="image/webp" srcset="img/gallery/photo-2-mob.webp 1x, img/gallery/photo-2-mob@2x.webp 2x">
+                <source media="(min-width:1440px)" width="255" height="200" type="image/jpg" srcset="img/gallery/photo-2-desk.jpg 1x, img/gallery/photo-2-desk@2x.jpg 2x">
+                <source media="(min-width: 768px)" width="252" height="205.5" type="image/jpg" srcset="img/gallery/photo-2-tab.jpg 1x, img/gallery/photo-2-tab@2x.jpg 2x">
+                <img src="img/gallery/photo-2-mob.jpg" srcset="img/gallery/photo-2-mob@2x.jpg 2x" width="127" height="129.5" alt="Вершины Кавказа.">
+              </picture>
+              <picture>
+                <source media="(min-width:1440px)" width="255" height="200" type="image/webp" srcset="img/gallery/photo-3-desk.webp 1x, img/gallery/photo-3-desk@2x.webp 2x">
+                <source media="(min-width: 768px)" width="252" height="205.5" type="image/webp" srcset="img/gallery/photo-3-tab.webp 1x, img/gallery/photo-3-tab@2x.webp 2x">
+                <source width="127" height="129.5" type="image/webp" srcset="img/gallery/photo-3-mob.webp 1x, img/gallery/photo-3-mob@2x.webp 2x">
+                <source media="(min-width:1440px)" width="255" height="200" type="image/jpg" srcset="img/gallery/photo-3-desk.jpg 1x, img/gallery/photo-3-desk@2x.jpg 2x">
+                <source media="(min-width: 768px)" width="252" height="205.5" type="image/jpg" srcset="img/gallery/photo-3-tab.jpg 1x, img/gallery/photo-3-tab@2x.jpg 2x">
+                <img src="img/gallery/photo-3-mob.jpg" srcset="img/gallery/photo-3-mob@2x.jpg 2x" width="127" height="129.5" alt="Вершины Кавказа.">
+              </picture>
+            </div>
+          </li>
+          <li class="gallery__item swiper-slide">
+            <picture>
+              <source media="(min-width:1440px)" width="284" height="463" type="image/webp" srcset="img/gallery/photo-4-desk.webp 1x, img/gallery/photo-4-desk@2x.webp 2x">
+              <source media="(min-width: 768px)" width="253" height="418" type="image/webp" srcset="img/gallery/photo-4-tab.webp 1x, img/gallery/photo-4-tab@2x.webp 2x">
+              <source width="158" height="266" type="image/webp" srcset="img/gallery/photo-4-mob.webp 1x, img/gallery/photo-4-mob@2x.webp 2x">
+              <source media="(min-width:1440px)" width="284" height="463" type="image/jpg" srcset="img/gallery/photo-4-desk.jpg 1x, img/gallery/photo-4-desk@2x.jpg 2x">
+              <source media="(min-width: 768px)" width="182.67" height="200" type="image/jpg" srcset="img/gallery/photo-4-tab.jpg 1x, img/gallery/photo-4-tab@2x.jpg 2x">
+              <img src="img/gallery/photo-4-mob.jpg" srcset="img/gallery/photo-4-mob@2x.jpg 2x" width="158" height="266" alt="Вершины Кавказа.">
+            </picture>
+          </li>
+          <li class="gallery__item swiper-slide">
+            <div class="gallery__item-conteiner">
+              <picture>
+                <source media="(min-width:1440px)" width="255" height="200" type="image/webp" srcset="img/gallery/photo-5-desk.webp 1x, img/gallery/photo-5-desk@2x.webp 2x">
+                <source media="(min-width: 768px)" width="252" height="205.5" type="image/webp" srcset="img/gallery/photo-5-tab.webp 1x, img/gallery/photo-5-tab@2x.webp 2x">
+                <source width="127" height="129.5" type="image/webp" srcset="img/gallery/photo-5-mob.webp 1x, img/gallery/photo-5-mob@2x.webp 2x">
+                <source media="(min-width:1440px)" width="255" height="200" type="image/jpg" srcset="img/gallery/photo-5-desk.jpg 1x, img/gallery/photo-5-desk@2x.jpg 2x">
+                <source media="(min-width: 768px)" width="252" height="205.5" type="image/jpg" srcset="img/gallery/photo-5-tab.jpg 1x, img/gallery/photo-5-tab@2x.jpg 2x">
+                <img src="img/gallery/photo-5-mob.jpg" srcset="img/gallery/photo-5-mob@2x.jpg 2x" width="127" height="129.5" alt="Вершины Кавказа.">
+              </picture>
+              <picture>
+                <source media="(min-width:1440px)" width="255" height="200" type="image/webp" srcset="img/gallery/photo-6-desk.webp 1x, img/gallery/photo-6-desk@2x.webp 2x">
+                <source media="(min-width: 768px)" width="252" height="205.5" type="image/webp" srcset="img/gallery/photo-6-tab.webp 1x, img/gallery/photo-6-tab@2x.webp 2x">
+                <source width="127" height="129.5" type="image/webp" srcset="img/gallery/photo-6-mob.webp 1x, img/gallery/photo-6-mob@2x.webp 2x">
+                <source media="(min-width:1440px)" width="255" height="200" type="image/jpg" srcset="img/gallery/photo-6-desk.jpg 1x, img/gallery/photo-6-desk@2x.jpg 2x">
+                <source media="(min-width: 768px)" width="252" height="205.5" type="image/jpg" srcset="img/gallery/photo-6-tab.jpg 1x, img/gallery/photo-6-tab@2x.jpg 2x">
+                <img src="img/gallery/photo-6-mob.jpg" srcset="img/gallery/photo-6-mob@2x.jpg 2x" width="127" height="129.5" alt="Вершины Кавказа.">
+              </picture>
+            </div>
+          </li>
+          <li class="gallery__item swiper-slide">
+            <picture>
+              <source media="(min-width:1440px)" width="284" height="463" type="image/webp" srcset="img/gallery/photo-7-desk.webp 1x, img/gallery/photo-7-desk@2x.webp 2x">
+              <source media="(min-width: 768px)" width="253" height="418" type="image/webp" srcset="img/gallery/photo-7-tab.webp 1x, img/gallery/photo-7-tab@2x.webp 2x">
+              <source width="158" height="266" type="image/webp" srcset="img/gallery/photo-7-mob.webp 1x, img/gallery/photo-7-mob@2x.webp 2x">
+              <source media="(min-width:1440px)" width="284" height="463" type="image/jpg" srcset="img/gallery/photo-7-desk.jpg 1x, img/gallery/photo-7-desk@2x.jpg 2x">
+              <source media="(min-width: 768px)" width="253" height="418" type="image/jpg" srcset="img/gallery/photo-7-tab.jpg 1x, img/gallery/photo-7-tab@2x.jpg 2x">
+              <img src="img/gallery/photo-7-mob.jpg" srcset="img/gallery/photo-7-mob@2x.jpg 2x" width="158" height="266" alt="Вершины Кавказа.">
+            </picture>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
