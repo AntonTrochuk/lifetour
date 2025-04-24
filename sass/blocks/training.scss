@@ -1,3 +1,41 @@
+.training {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: none;
+    position: absolute;
+    z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      top: 612px;
+      left: 303px;
+      width: 840px;
+      height: 280px;
+      background-image:
+        image-set(
+          url("../../img/background/clouds2_tablet@1x.webp") 1x,
+          url("../../img/background/clouds2_tablet@2x.webp") 2x,
+          url("../../img/background/clouds2_tablet@1x.png") 1x,
+          url("../../img/background/clouds2_tablet@2x.png") 2x
+        );
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 613px;
+      left: 807px;
+      background-image:
+        image-set(
+          url("../../img/background/clouds2_desktop@1x.webp") 1x,
+          url("../../img/background/clouds2_desktop@2x.webp") 2x,
+          url("../../img/background/clouds2_desktop@1x.png") 1x,
+          url("../../img/background/clouds2_desktop@2x.png") 2x
+        );
+    }
+  }
+}
+
 
 .training__container {
   width: 290px;
