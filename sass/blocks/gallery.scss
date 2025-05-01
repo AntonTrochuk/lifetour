@@ -1,4 +1,9 @@
 
+.gallery {
+  display: flex;
+  justify-content: center;
+}
+
 .gallery__container {
   width: 320px;
   color: $color-text-basic;

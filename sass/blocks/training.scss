@@ -158,7 +158,7 @@
   }
 }
 
-.trainers__item {
+.training__item {
   padding: 15px;
   border: 1px solid $color-training-border;
   box-sizing: border-box;
@@ -231,7 +231,7 @@
   }
 }
 
-.trainers__social-link {
+.training__social-link {
   text-decoration: none;
   color: $color-text-basic;
   display: block;
@@ -242,7 +242,7 @@
   }
 }
 
-.trainers__item:nth-child(1) {
+.training__item:nth-child(1) {
   order: 2;
 
   @media (min-width: $tablet-width) {
@@ -250,7 +250,7 @@
   }
 }
 
-.trainers__item:nth-child(2) {
+.training__item:nth-child(2) {
   order: 3;
 
   @media (min-width: $tablet-width) {
@@ -258,7 +258,7 @@
   }
 }
 
-.trainers__item:nth-child(3) {
+.training__item:nth-child(3) {
   order: 1;
 
   @media (min-width: $tablet-width) {
@@ -266,11 +266,11 @@
   }
 }
 
-.trainers__item:nth-child(4) {
+.training__item:nth-child(4) {
   order: 4;
 }
 
-.trainers__item:nth-child(5) {
+.training__item:nth-child(5) {
   order: 5;
 }
 

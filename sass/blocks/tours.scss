@@ -238,6 +238,7 @@
   gap: 13px;
   justify-content: center;
   margin: 35px 0 30px;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     margin: 35px 0 50px;
@@ -257,7 +258,58 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  &:hover {
+    color: $color-hover;
+  }
+
+  &:focus-visible {
+    color: $color-background-blue;
+  }
+
+  &:active {
+    color: $color-active;
+  }
+
+  &:disabled {
+    color: $color-disabled;
+  }
+
+  &:hover::after {
+    filter:
+      brightness(0.9)
+      sepia(1)
+      saturate(7)
+      hue-rotate(185deg)
+      opacity(0.1);
+  }
+
+  &:focus::after,
+  &:focus-visible::after {
+    filter:
+      brightness(0.9)
+      sepia(1)
+      saturate(800%)
+      hue-rotate(185deg)
+      contrast(1.2);
+  }
+
+  &:active::after {
+    filter:
+      brightness(0.8)
+      sepia(1)
+      saturate(700%)
+      hue-rotate(210deg)
+      contrast(1.1);
+  }
+
+  &:disabled::after {
+    filter:
+      brightness(1.6)
+      contrast(0.9);
+  }
 }
+
 
 .tours__button--next {
   &:disabled {
