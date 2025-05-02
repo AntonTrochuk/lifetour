@@ -43,6 +43,8 @@
     line-height: 26px;
     color: $color-text-basic;
     opacity: 3%;
+    pointer-events: none;
+    user-select: none;
 
     @media (min-width: $tablet-width) {
       font-size: 40px;

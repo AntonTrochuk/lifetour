@@ -1,6 +1,7 @@
 .header {
   background-color: $color-background-blue;
   position: relative;
+  z-index: 11;
 }
 
 .header__container {

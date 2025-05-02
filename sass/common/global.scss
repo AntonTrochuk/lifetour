@@ -3,6 +3,30 @@
   font-style: normal;
 }
 
+.body-wrapper-menu {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: $color-body-wrapper-menu;
+    z-index: 10;
+  }
+}
+
+.main-container-wrapper {
+  pointer-events: none;
+}
+
 .main-container {
   position: relative;
   overflow: hidden;

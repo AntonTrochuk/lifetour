@@ -94,6 +94,8 @@
     font-size: 26px;
     line-height: 26px;
     opacity: 3%;
+    pointer-events: none;
+    user-select: none;
 
     @media (min-width: $tablet-width) {
       font-size: 40px;
