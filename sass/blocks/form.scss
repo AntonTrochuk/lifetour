@@ -102,6 +102,7 @@
   list-style: none;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 8px;
   padding: 0 0 174px;
@@ -127,6 +128,8 @@
   color: $color-label;
   background-color: $color-background-white;
   width: 220px;
+  height: 19px;
+  overflow: hidden;
   position: absolute;
   text-align: start;
   z-index: 9;
@@ -181,7 +184,10 @@
   color: $color-text-white;
   height: 58px;
   width: 258px;
+  overflow: hidden;
   box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     height: 56px;
@@ -190,5 +196,29 @@
 
   @media (min-width: $desktop-width) {
     width: 180px;
+  }
+
+  &:hover {
+    border-color: $color-dark-blue;
+    color: $color-dark-blue;
+    background-color: $color-background-white;
+  }
+
+  &:focus-visible {
+    border-color: transparent;
+    color: $color-dark-blue;
+    background-color: $color-background-white;
+  }
+
+  &:active {
+    border-color: $color-dark-blue;
+    color: $color-text-white;
+    background-color: $color-dark-blue;
+  }
+
+  &:disabled {
+    color: $color-text-white;
+    background-color: $color-disabled;
+    border-color: $color-disabled;
   }
 }

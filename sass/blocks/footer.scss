@@ -341,16 +341,52 @@
   display: block;
   padding: 3px 5px;
   border: 1px  solid transparent;
+  outline: none;
+
+  &:hover {
+    border-bottom: 1px solid $color-button-additional;
+  }
+
+  &:focus-visible {
+    border: 1px solid $color-button-additional;
+  }
+
+  &:active {
+    color: $color-background-blue;
+    border: 1px solid transparent;
+  }
+
+  &:disabled {
+    color: $color-disabled;
+    border: 1px solid transparent;
+  }
 }
 
 .footer__link {
   color: $color-text-basic;
   text-decoration: none;
   display: none;
+  outline: none;
 
   @media (min-width: $desktop-width) {
     display: block;
     margin: 2px 0 0;
+
+    &:hover {
+      color: $color-hover;
+    }
+
+    &:focus-visible {
+      color: $color-background-blue;
+    }
+
+    &:active {
+      color: $color-active;
+    }
+
+    &:disabled {
+      color: $color-disabled;
+    }
   }
 }
 
@@ -385,6 +421,28 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  &:hover {
+    border-color: $color-button-additional;
+  }
+
+  &:focus-visible {
+    border-color: transparent;
+  }
+
+  &:active {
+    border-color: $color-icons-additional;
+    background-color: $color-icons-additional;
+  }
+
+  &:disabled {
+    border-color: $color-disabled;
+    background-color: $color-disabled;
+  }
+
+  &:active img {
+    filter: brightness(0) invert(1);
   }
 }
 

@@ -181,6 +181,26 @@
     line-height: 16px;
     display: flex;
     justify-content: space-between;
+    pointer-events: none;
+
+    &:hover::after {
+      border-color: $color-button-additional;
+    }
+
+    &:focus-visible::after {
+      border-color: transparent;
+    }
+
+    &:active::after {
+      border-color: $color-icons-additional;
+      background-color: $color-icons-additional;
+      background-image: url("/__spritemap#sprite-vk_active-view");
+    }
+
+    &:disabled::after {
+      border-color: $color-disabled;
+      background-color: $color-disabled;
+    }
   }
 
   span::after {
@@ -194,6 +214,7 @@
     background-size: 14px 8px;
     background-repeat: no-repeat;
     background-position: center;
+    pointer-events: auto;
   }
 
   p {
@@ -289,6 +310,7 @@
   }
 }
 
+
 .training__instruction-list {
   margin: 0;
   list-style: none;
@@ -297,6 +319,7 @@
   flex-direction: column;
   gap: 25px;
   position: relative;
+  z-index: 3;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -311,6 +334,7 @@
     row-gap: 0;
     column-gap: 8px;
     padding: 0 0 62px;
+    flex-wrap: nowrap;
   }
 
   &::after {
@@ -335,6 +359,10 @@
       transform: translateX(16px);
     }
   }
+}
+
+.training__instruction-list li:nth-child(n+5) {
+  display: none;
 }
 
 .training__instruction-item {

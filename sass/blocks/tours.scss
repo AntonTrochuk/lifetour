@@ -79,6 +79,10 @@
   padding: 0;
 }
 
+.tours__item {
+  overflow: hidden;
+}
+
 .tours__item:nth-child(2),
 .tours__item:nth-child(3),
 .tours__item:nth-child(4) {
@@ -147,7 +151,9 @@
 
 .tours__details {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     gap: 28px;
@@ -163,6 +169,7 @@
 
 .tours__details-level {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 4px;
 }
@@ -170,6 +177,7 @@
 
 .tours__details-rating {
   display: flex;
+  flex-wrap: wrap;
   gap: 1px;
 }
 

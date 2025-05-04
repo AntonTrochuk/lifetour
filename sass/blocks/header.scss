@@ -79,6 +79,7 @@
   width: 100%;
   z-index: 2;
   box-sizing: border-box;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     top: 82px;
@@ -94,6 +95,9 @@
     top: 51%;
     left: 51%;
     transform: translate(-49%, -50%);
+    flex-wrap: wrap;
+    max-height: 120px;
+    overflow: hidden;
   }
 }
 
@@ -118,6 +122,7 @@
   outline: none;
   display: inline-block;
   box-sizing: border-box;
+  overflow: hidden;
 
   &:active {
     color: $color-dark-blue;
@@ -203,6 +208,8 @@
 
   @media (min-width: $desktop-width) {
     padding: 4px 0 0;
+    margin: 0;
+    max-width: 170px;
 
     &:hover {
       color: $color-number-blue-hover;

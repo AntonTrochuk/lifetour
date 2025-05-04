@@ -31,6 +31,7 @@
     align-items: center;
     text-align: center;
     z-index: 7;
+    overflow: hidden;
 
     @media (min-width: $tablet-width) {
       top: 342px;
@@ -42,6 +43,7 @@
       width: 1200px;
       align-items: start;
       text-align: left;
+      overflow: hidden;
     }
   }
 
@@ -63,6 +65,8 @@
       font-size: 77px;
       line-height: 77px;
       margin: 0 0 23px;
+      height: 154px;
+      overflow: hidden;
     }
   }
 
@@ -84,6 +88,8 @@
     @media (min-width: $desktop-width) {
       margin: 0 0 37px;
       width: 464px;
+      height: 72px;
+      overflow: hidden;
     }
   }
 
@@ -330,6 +336,7 @@
   @media (min-width: $desktop-width) {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     padding: 0;
     margin: 0;
